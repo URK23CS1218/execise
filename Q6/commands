@@ -1,3 +1,23 @@
+✔️ Option 2: Using Minikube
+
+If you installed Minikube:
+
+minikube start
+✅ Verify cluster is running
+kubectl cluster-info
+Expected:
+
+Kubernetes control plane is running
+✅ Fix context (important)
+kubectl config get-contexts
+
+Switch to correct one:
+
+kubectl config use-context docker-desktop
+
+
+
+
 # Create deployment
 kubectl create deployment myapp --image=nginx:latest
 
